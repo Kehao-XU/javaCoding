@@ -26,11 +26,19 @@ public class IntList {
         return totalSize;
     }
 
+    public int get(int i){
+        if(i!=0){
+            return this.rest.get(i-1);
+        }
+        else return this.first;
+    }
+
     public static void main(String[] args) {
         IntList L = new IntList(15,null);
         L=new IntList(10,L);
         L=new IntList(5,L);
 
         System.out.println(L.iterativeSize());
+        System.out.println(L.get(0));
     }
 }
