@@ -5,5 +5,6 @@ public class DogLauncher {
         Dog hugeDog = new Dog(130);
 
         Dog.biggerDog(smallDog,mediumDog).makeNoise();
+        Dog.biggerDog(smallDog,hugeDog).makeNoise();
     }
 }
