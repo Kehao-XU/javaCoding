@@ -42,6 +42,7 @@ public class StaticExample {
         instanceCounter++;
     }
     
+    @SuppressWarnings("static-access")
     public static void main(String[] args) {
         System.out.println("=== 演示静态方法调用 ===");
         // 直接通过类名调用静态方法
@@ -87,6 +88,7 @@ public class StaticExample {
     }
 }
 
+@SuppressWarnings("unused")
 class StaticUsageGuide {
     /*
      * static使用要点总结：
