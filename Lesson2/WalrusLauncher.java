@@ -10,6 +10,7 @@ public class WalrusLauncher {
     }
     public static void doStuff(Walrus W,int x){
         W.weight=W.weight-100;
+        W.height=Math.pow(W.height,2);
         x-=5;
     }
 }
