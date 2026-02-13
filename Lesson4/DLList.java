@@ -58,4 +58,14 @@ public class DLList<JoustJane> {
             p = p.next;
         }
     }
+
+    public void deleteFirst() {
+        if (size == 0) {
+            ;
+        } else {
+            sentiNode.next.next.prev = sentiNode;
+            sentiNode.next = sentiNode.next.next;
+            size--;
+        }
+    }
 }
